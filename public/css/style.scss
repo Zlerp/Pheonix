@@ -1,0 +1,19 @@
+
+$mainC: green;
+
+
+body{
+  height: 50px;
+  width: 50px;
+  background-color: $mainC;
+
+}
+
+
+ul{
+  background: red;
+  li {
+    display: inline;
+  }
+
+}
