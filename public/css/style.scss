@@ -7,6 +7,9 @@
 $mainC: green;
 
 
+
+@import "enterButton"
+
 // body{
 //   height: 50px;
 //   width: 50px;
@@ -25,34 +28,3 @@ $mainC: green;
 //   }
 //
 // }
-
-
-p{
-  color: purple;
-  font-size: 30px;
-}
-
-.buttonHold{
-  // background: blue;
-  // @include vAlign();
-  // margin: 0 auto;
-  position: absolute;
-  text-align: center;
-  min-height: 100%;
-  min-width: 100%;
-  z-index: 40;
-}
-
-button#enterPage{
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  width: 120px;
-  height: 60px;
-  border:3px solid white;
-  background: none;
-  text-align: center;
-  margin-top: 60vh;
-  outline: none;
-
-}
