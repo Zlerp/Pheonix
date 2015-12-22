@@ -11,17 +11,18 @@
 
 button#enterPage{
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
   color: white;
-  width: 120px;
-  height: 60px;
+  width: 170px;
+  height: 70px;
   border:3px solid white;
   background: none;
   text-align: center;
-  margin-top: 60vh;
+  margin-top: 65vh;
   outline: none;
   z-index: 1;
-  opacity: .6;
+  opacity: .9;
+
 
 
   -webkit-box-shadow: 0px 24px 46px -22px rgba(0,0,0,1);
@@ -30,7 +31,7 @@ button#enterPage{
 
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
-  -webkit-transition-property: box-shadow opactity;
+  -webkit-transition-property: box-shadow opactity color background;
   // transition-property: box-shadow;
   // -webkit-transition-property: opacity;
   // transition-property: opacity;
@@ -40,6 +41,8 @@ button#enterPage{
 
 button#enterPage:hover{
 
+  color: black;
+  background: white;
   opacity: .9;
   -webkit-box-shadow: 0px 16px 80px -5px rgba(0,0,0,.8);
   -moz-box-shadow: 0px 16px 80px -5px rgba(0,0,0,.8);

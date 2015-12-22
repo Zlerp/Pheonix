@@ -1,10 +1,15 @@
 
+$mainC: #10bcc2;
+
 @import "reset";
 @import "progressBar";
 @import "grid";
-@import "background";
 @import "centering";
-$mainC: green;
+
+
+@import "nav-bar";
+@import "background";
+
 
 
 
