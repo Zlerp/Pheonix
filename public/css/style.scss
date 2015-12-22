@@ -1,5 +1,8 @@
 
-$mainC: #10bcc2;
+$orange: #f1b521;
+$yellow: #e0e31a;
+$lGrey : #66696e;
+$dGrey : #4a4a4f;
 
 @import "reset";
 @import "progressBar";
@@ -13,8 +16,11 @@ $mainC: #10bcc2;
 
 
 
-@import "enterButton"
+@import "enterButton";
 
+.drawer {
+  z-index: 40!important;
+}
 // body{
 //   height: 50px;
 //   width: 50px;

@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -161,7 +160,7 @@ body {
   z-index: 200; }
   #hamburger-icon .line {
     display: block;
-    background: #ecf0f1;
+    background: #e0e31a;
     width: 70px;
     height: 5px;
     position: absolute;
@@ -202,6 +201,31 @@ body {
   display: inline-block; }
   #hamburger-icon:hover, #hamburger-icon:focus {
     color: #ecf0f1; }
+
+.navigator {
+  width: 100%;
+  text-align: right;
+  height: 55px;
+  position: fixed;
+  z-index: 50;
+  background-color: white;
+  opacity: .7; }
+  .navigator .nav-item {
+    display: inline;
+    text-align: center;
+    height: 55px;
+    width: 100%;
+    vertical-align: bottom;
+    background-color: red; }
+  .navigator a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    height: 55px; }
 
 #bgTint {
   position: absolute;
@@ -269,5 +293,7 @@ button#enterPage:hover {
     background-color: #001F3F; }
   100% {
     background-color: #FF4136; } }
+.drawer {
+  z-index: 40 !important; }
 
 /*# sourceMappingURL=style.css.map */
