@@ -150,90 +150,6 @@ a:hover {
 .hCenterBlock {
   margin: 0 auto; }
 
-body {
-  -webkit-font-smoothing: antialiased; }
-
-@media only screen and (max-width: 700px) {
-  #hamburger-icon {
-    width: 35px;
-    height: 20px;
-    position: absolute;
-    display: block;
-    margin: 40px auto 20px auto;
-    z-index: 200; }
-    #hamburger-icon .line {
-      display: block;
-      background: #e0e31a;
-      width: 35px;
-      height: 4px;
-      position: absolute;
-      left: 0;
-      border-radius: 2px;
-      transition: all 0.4s;
-      -webkit-transition: all 0.4s;
-      -moz-transition: all 0.4s; }
-      #hamburger-icon .line.line-1 {
-        top: 0; }
-      #hamburger-icon .line.line-2 {
-        top: 50%; }
-      #hamburger-icon .line.line-3 {
-        top: 100%; }
-    #hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
-      transform: translateY(-2px);
-      -webkit-transform: translateY(-2px);
-      -moz-transform: translateY(-2px); }
-    #hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
-      transform: translateY(2px);
-      -webkit-transform: translateY(2px);
-      -moz-transform: translateY(2px); }
-    #hamburger-icon.active .line-1 {
-      transform: translateY(10px) translateX(0) rotate(45deg);
-      -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
-      -moz-transform: translateY(10px) translateX(0) rotate(45deg); }
-    #hamburger-icon.active .line-2 {
-      opacity: 0; }
-    #hamburger-icon.active .line-3 {
-      transform: translateY(-10px) translateX(0) rotate(-45deg);
-      -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
-      -moz-transform: translateY(-10px) translateX(0) rotate(-45deg); } }
-#hamburger-icon {
-  text-decoration: none;
-  color: #95a5a6;
-  margin: 1em 1em;
-  display: inline-block; }
-  #hamburger-icon:hover, #hamburger-icon:focus {
-    color: #ecf0f1; }
-
-.navigator {
-  width: 100%;
-  text-align: right;
-  height: 55px;
-  position: fixed;
-  z-index: 50;
-  background-color: white;
-  opacity: .7; }
-  .navigator .nav-item {
-    display: inline;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    vertical-align: bottom; }
-  .navigator a {
-    text-decoration: none;
-    color: #4a4a4f;
-    text-align: center;
-    font-size: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 100%;
-    height: 200%;
-    height: 55px;
-    padding-bottom: 10px;
-    padding-top: 10px; }
-  .navigator a:hover {
-    background-color: #f0f0f0;
-    color: black; }
-
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -249,6 +165,11 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+#cssmenu {
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
 
 #cssmenu:after,
 #cssmenu > ul:after {
@@ -273,6 +194,7 @@ body {
   top: 0;
   left: 0;
   height: 3px;
+  z-index: 50;
   background: #f1b521;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -311,6 +233,10 @@ body {
   -ms-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease; }
+
+#cssmenu > ul > li > a:hover {
+  color: #f1b521;
+  background-color: #e6e6e6; }
 
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
@@ -492,7 +418,8 @@ body {
     display: block;
     width: 15px;
     height: 2px;
-    background: #000000; }
+    background: #000000;
+    color: #f1b521; }
 
   #cssmenu #menu-button::before {
     content: '';
@@ -542,7 +469,8 @@ body {
     display: none; } }
 #cssmenu {
   z-index: 300;
-  width: 100%; }
+  width: 100%;
+  position: fixed; }
 
 #bgTint {
   position: absolute;
@@ -553,7 +481,7 @@ body {
 
 img.bg {
   /* Set rules to fill background */
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 1024px;
   /* Set up proportionate scaling */
   width: 100%;
@@ -610,6 +538,9 @@ button#enterPage:hover {
     background-color: #001F3F; }
   100% {
     background-color: #FF4136; } }
+body {
+  background: white; }
+
 .drawer {
   z-index: 40 !important; }
 
