@@ -4,6 +4,8 @@ $yellow: #e0e31a;
 $lGrey : #66696e;
 $dGrey : #4a4a4f;
 
+
+
 @import "reset";
 @import "progressBar";
 @import "grid";
@@ -17,6 +19,8 @@ $dGrey : #4a4a4f;
 
 
 @import "enterButton";
+@import "media";
+
 
 .drawer {
   z-index: 40!important;
