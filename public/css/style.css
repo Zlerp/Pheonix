@@ -603,7 +603,7 @@ img.bg {
 
 .submitContact:hover {
   border: #4a4a4f solid 2px; }
-  .submitContact:hover input {
+  .submitContact:hover button {
     color: #4a4a4f; }
 
 .containerContact {
@@ -628,7 +628,7 @@ img.bg {
     transition-duration: .5s;
     -webkit-transition-property: all;
     margin-left: 0; }
-    .submitContact input {
+    .submitContact button {
       text-decoration: none;
       font-size: 37px;
       color: white;
@@ -642,6 +642,10 @@ img.bg {
       -webkit-transition-duration: .5s;
       transition-duration: .5s;
       -webkit-transition-property: all; } }
+.sendButton {
+  margin-left: 50px;
+  margin-right: 50px; }
+
 .buttonHold {
   position: absolute;
   text-align: center;
